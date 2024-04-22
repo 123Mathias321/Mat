@@ -80,4 +80,66 @@
     </body>
     <script src="">
     </script>
-</html>  
+</html> 
+<script>
+    FnavnEl = document.getElementById("Fnavn")
+    EnavnEl = document.getElementById("Enavn")
+    gateEl = document.getElementById("gate")
+    postEl = document.getElementById("post")
+    stedEl = document.getElementById("sted")
+    tlfEl = document.getElementById("tlf")
+
+    FnavnEl.addEventListener("input",Fnavnlagring)
+    EnavnEl.addEventListener("input",Enavnlagring)
+    gateEl.addEventListener("input",gatelagring)
+    postEl.addEventListener("input",postlagring)
+    stedEl.addEventListener("input",stedlagring)
+    tlfEl.addEventListener("input",tlflagring)
+
+    FnavnEl.value = localStorage.fnavn
+    enavnEl.value = localStorage.enavn
+    gateEl.value = localStorage.gate
+    postEl.value = localStorage.post
+    stedEl.value = localStorage.sted
+    tlfEl.value = localStorage.tlf
+
+    function Fnavnlagring() {
+        let fnavn = FnavnEl.value
+        localStorage.fnavn = fnavn
+
+        FnavnEl.value = localStorage.fnavn
+    }
+    function Enavnlagring() {
+        let enavn = EnavnEl.value
+        localStorage.enavn = enavn
+
+        enavnEl.value = localStorage.enavn
+    }
+    function gatelagring() {
+        let gate = gateEl.value
+        localStorage.gate = gate
+
+        gateEl.value = localStorage.gate
+    }
+    function postlagring() {
+        let post = postEl.value
+        localStorage.post = post
+
+        postEl.value = localStorage.post
+    }
+    function stedlagring() {
+        let sted = stedEl.value
+        localStorage.sted = sted
+
+        stedEl.value = localStorage.sted
+    }
+    function tlflagring() {
+        let tlf = tlfEl.value
+        localStorage.tlf = tlf
+
+        tlfEl.value = localStorage.tlf
+    }
+
+
+</script>
+
