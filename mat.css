@@ -93,4 +93,6 @@ body{
 table{
     border: 5px solid black;
 }
-#kort_1
+#kort_1{
+    background-image: url("image.png");
+}
