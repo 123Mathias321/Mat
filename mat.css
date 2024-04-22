@@ -1,0 +1,57 @@
+body{
+    background-image: url("bakrund.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* background-attachment: fixed;
+    background-position: center; */
+}
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    border: solid 5px black;
+}
+.kort{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 5% repeat(6, 1fr) 5%;
+    height: 350px;
+    width: 200px;
+    background-image: url("paper.jpg");
+    border: solid 5px black;
+    border-radius: 15px;
+}
+.overskrift{
+    border: solid 5px black;
+    grid-area: 2/2/5/3;
+    background-color: white;
+    border-radius: 15px;
+}
+.kort:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.overskrift:hover{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.overskrift > p{
+    padding: 1px;
+
+}
+.overskrift > h2{
+    padding: 1px;
+    font-size: medium;
+
+}
+#boyning{
+    grid-area: 5/2/7/3;
+}
+table{
+    border: 5px solid black;
+}
