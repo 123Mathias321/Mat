@@ -126,3 +126,193 @@
     <script src="">
     </script>
 </html>  
+
+<script>
+    let vega1_2 = 0
+    let vega3_4 = 0
+    let vege1_2 = 0
+    let vege3_4 = 0
+    let sjo1_2 = 0
+    let sjo3_4 = 0
+    let kjott_fisk1_2 = 0
+    let kjott_fisk3_4 = 0
+    let fam1_2 = 0
+    let fam3_4 = 0
+
+
+
+    vegansk1_2El = document.getElementById("kort_1")
+    vegetar1_2El = document.getElementById("kort_2")
+    sjo1_2El = document.getElementById("kort_3")
+    kjott_fisk1_2El = document.getElementById("kort_4")
+    fam1_2El = document.getElementById("kort_5")
+
+    vegansk3_4El = document.getElementById("kort_6")
+    vegetar3_4El = document.getElementById("kort_7")
+    sjo3_4El = document.getElementById("kort_8")
+    kjott_fisk3_4El = document.getElementById("kort_9")
+    fam3_4El = document.getElementById("kort_10")
+
+    vegansk1_2El.addEventListener("click", vegansk1_2)
+    vegetar1_2El.addEventListener("click", vegetar1_2)
+    sjo1_2El.addEventListener("click", sjo1_2)
+    kjott_fisk1_2El.addEventListener("click", kjott_fisk1_2)
+    fam1_2El.addEventListener("click", fam1_2)
+
+    vegansk3_4El.addEventListener("click", vegansk3_4)
+    vegetar3_4El.addEventListener("click", vegetar3_4)
+    sjo3_4El.addEventListener("click", sjo3_4)
+    kjott_fisk3_4El.addEventListener("click", kjott_fisk3_4)
+    fam3_4El.addEventListener("click", fam3_4)
+
+
+
+    FnavnEl = document.getElementById("Fnavn")
+    EnavnEl = document.getElementById("Enavn")
+    gateEl = document.getElementById("gate")
+    postEl = document.getElementById("post")
+    stedEl = document.getElementById("sted")
+    tlfEl = document.getElementById("tlf")
+
+    FnavnEl.addEventListener("input",Fnavnlagring)
+    EnavnEl.addEventListener("input",Enavnlagring)
+    gateEl.addEventListener("input",gatelagring)
+    postEl.addEventListener("input",postlagring)
+    stedEl.addEventListener("input",stedlagring)
+    tlfEl.addEventListener("input",tlflagring)
+
+    FnavnEl.value = localStorage.fnavn
+    enavnEl.value = localStorage.enavn
+    gateEl.value = localStorage.gate
+    postEl.value = localStorage.post
+    stedEl.value = localStorage.sted
+    tlfEl.value = localStorage.tlf
+
+    function Fnavnlagring() {
+        let fnavn = FnavnEl.value
+        localStorage.fnavn = fnavn
+
+        FnavnEl.value = localStorage.fnavn
+    }
+    function Enavnlagring() {
+        let enavn = EnavnEl.value
+        localStorage.enavn = enavn
+
+        enavnEl.value = localStorage.enavn
+    }
+    function gatelagring() {
+        let gate = gateEl.value
+        localStorage.gate = gate
+
+        gateEl.value = localStorage.gate
+    }
+    function postlagring() {
+        let post = postEl.value
+        localStorage.post = post
+
+        postEl.value = localStorage.post
+    }
+    function stedlagring() {
+        let sted = stedEl.value
+        localStorage.sted = sted
+
+        stedEl.value = localStorage.sted
+    }
+    function tlflagring() {
+        let tlf = tlfEl.value
+        localStorage.tlf = tlf
+
+        tlfEl.value = localStorage.tlf
+    }
+    
+    function vegansk1_2() {
+        if (vega1_2 == 0) {
+            vega1_2 = 1
+        }
+        else {
+            vega1_2 = 0
+        }
+        localStorage.vega1 = vega1_2
+    }
+    function vegansk3_4() {
+        if (vega3_4 == 0) {
+            vega3_4 = 1
+        }
+        else {
+            vega3_4 = 0
+        }
+        localStorage.vega3 = vega3_4
+    }
+    function vegetar1_2() {
+        if (vege1_2 == 0) {
+            vege1_2 = 1
+        }
+        else {
+            vege1_2 = 0
+        }
+        localStorage.vege1 = vege1_2
+    }
+    function vegetar3_4() {
+        if (vege3_4 == 0) {
+            vege3_4 = 1
+        }
+        else {
+            vege3_4 = 0
+        }
+        localStorage.vege1 = vege1_2
+    }
+    function sjo1_2() {
+        if (sjo1_2 == 0) {
+            sjo1_2 = 1
+        }
+        else {
+            sjo1_2 = 0
+        }
+        localStorage.sjo1 = sjo1_2
+    }
+    function sjo3_4() {
+        if (sjo3_4 == 0) {
+            sjo3_4 = 1
+        }
+        else {
+            sjo3_4 = 0
+        }
+        localStorage.sjo1 = sjo3_4
+    }
+    function kjott_fisk1_2() {
+        if (kjott_fisk1_2 == 0) {
+            kjott_fisk1_2 = 1
+        }
+        else {
+            kjott_fisk1_2 = 0
+        }
+        localStorage.kjott_fisk1 = kjott_fisk1_2
+    }
+    function kjott_fisk3_4() {
+        if (kjott_fisk3_4 == 0) {
+            kjott_fisk3_4 = 1
+        }
+        else {
+            kjott_fisk3_4 = 0
+        }
+        localStorage.kjott_fisk1 = kjott_fisk3_4
+    }
+    function fam1_2() {
+        if (fam1_2 == 0) {
+            fam1_2 = 1
+        }
+        else {
+            fam1_2 = 0
+        }
+        localStorage.fam1 = fam1_2
+    }
+    function fam3_4() {
+        if (fam3_4 == 0) {
+            fam3_4 = 1
+        }
+        else {
+            fam3_4 = 0
+        }
+        localStorage.fam1 = fam3_4
+    }
+</script>
