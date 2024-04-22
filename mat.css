@@ -36,7 +36,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
-    border: solid 5px red;
 }
 #container5 > h2{
     margin: 0;
@@ -93,6 +92,33 @@ body{
 table{
     border: 5px solid black;
 }
-#kort_1{
+#Okort_1{
+    background-image: url("image.png");
+}
+#Okort_2{
+    background-image: url("image.png");
+}
+#Okort_3{
+    background-image: url("image.png");
+}
+#Okort_4{
+    background-image: url("image.png");
+}
+#Okort_5{
+    background-image: url("image.png");
+}
+#Okort_6{
+    background-image: url("image.png");
+}
+#Okort_7{
+    background-image: url("image.png");
+}
+#Okort_8{
+    background-image: url("image.png");
+}
+#Okort_9{
+    background-image: url("image.png");
+}
+#Okort_10{
     background-image: url("image.png");
 }
